@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>弹出层动画</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<div class="c-animation-mask" id="mask">
+			<div class="c-animation-layer" id="layer">
+				<div class="c-layer-header">
+					<div class="c-title" id="title"></div>
+					<span class="c-close-btn" onclick="hide()"></span>
+				</div>
+				<div class="c-layer-canvas">
+					<img src="img/demo.gif" />
+				</div>
+			</div>
+		</div>
+		<script>
+			var initialize = function() {
+				document.onreadystatechange = function() {
+					if(document.readyState == "complete") {
+						show();
+					}
+				}
+			}
+			initialize();
+
+			var i=6;
+			var timer;
+			var showTitle = function() {
+				document.getElementById('title').innerText=(i--)+'秒后自动关闭';
+				if(i<=0){
+					hide();
+				}
+			}
+
+			var show = function() {
+				document.getElementById('title').innerText=(i)+'秒后自动关闭';
+				timer = setInterval('showTitle()',1000); 
+				document.getElementById("mask").style.display='block';
+				
+			}
+
+			var hide = function() {
+				clearInterval(timer);
+				document.getElementById("mask").style.display='none';
+			}
+		</script>
+	</body>
+
+</html>
