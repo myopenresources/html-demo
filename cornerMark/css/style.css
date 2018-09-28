@@ -1,0 +1,118 @@
+.c-container {
+	margin-left: 20%;
+	margin-right: 20%;
+	height: auto;
+}
+
+.c-flex-card-row {
+	display: -webkit;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.c-flex-card-row .c-flex-card-item {
+	text-align: center;
+	width: 160px;
+	height: 25px;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 10px;
+	position: relative;
+}
+
+
+.c-card-shadow {
+	-moz-box-shadow: 1px 2px 10px rgba(50, 50, 50, 0.15) !important;
+	-webkit-box-shadow: 1px 2px 10px rgba(50, 50, 50, 0.15) !important;
+	box-shadow: 1px 2px 10px rgba(50, 50, 50, 0.15) !important;
+}
+
+.c-card-shadow:hover {
+	-moz-box-shadow: 1px 2px 10px rgba(10, 10, 10, 0.3) !important;
+	-webkit-box-shadow: 1px 2px 10px rgba(10, 10, 10, 0.3) !important;
+	box-shadow: 1px 2px 10px rgba(10, 10, 10, 0.3) !important;
+}
+
+
+.c-right-bottom-corner-mark {        	
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 20px solid #ff6958;
+    border-left: 20px solid transparent;
+}
+
+.c-right-bottom-corner-mark  .c-corner-mark-desc{
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 2px;
+    z-index: 1;
+    font-size: 3px;
+    font-weight: normal;
+}
+
+.c-right-top-corner-mark {        	
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 20px solid #ff6958;
+    border-left: 20px solid transparent;
+}
+
+.c-right-top-corner-mark  .c-corner-mark-desc{
+    color: #fff;
+    position: absolute;
+    bottom: 9px;
+    right: 2px;
+    z-index: 1;
+    font-size: 3px;
+    font-weight: normal;
+}
+
+
+.c-left-top-corner-mark {        	
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 20px solid #ff6958;
+    border-right: 20px solid transparent;
+}
+
+.c-left-top-corner-mark  .c-corner-mark-desc{
+    color: #fff;
+    position: absolute;
+    bottom: 9px;
+    left: 2px;
+    z-index: 1;
+    font-size: 3px;
+    font-weight: normal;
+}
+
+.c-left-bottom-corner-mark {        	
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 20px solid #ff6958;
+    border-right: 20px solid transparent;
+}
+
+.c-left-bottom-corner-mark  .c-corner-mark-desc{
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    z-index: 1;
+    font-size: 3px;
+    font-weight: normal;
+}

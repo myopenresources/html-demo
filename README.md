@@ -8,4 +8,7 @@
  2. 创建自适应flex卡片行例子，目录为：flex-card-row
   <img src="./img/2.png">
   </br>
+ 3. 创建角标例子，目录为：cornerMark
+  <img src="./img/3.png">
+  </br>
  
